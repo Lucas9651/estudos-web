@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio HTMl</title>
+</head>
+
+<body>
+    <header>
+       <h1>Exercicios HTML</h1> 
+    </header>
+    <nav>
+        <a href="texto.html">00 - Texto 1</a> |
+        <a href="texto2.html">01 - Texto 2</a> |
+        <a href="lista.html">03 - lista</a>|
+        <a href="links.html">05 - links</a> |
+        <a href="tabela.html">06 - tabela</a> |
+        <a href="forms.html">Formulario</a>
+    </nav>
+    <section id="conteudo"></section>
+    <footer>
+       <br><br> Web Moderno
+    </footer>
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            e.preventDefault()
+
+            const conteudo = document.getElementById('conteudo')
+            fetch(link.href)
+                .then(resp => rep.text())
+                .then(html => conteudo.innerHTML = html)
+        })
+    </script>
+
+
+</body>
+
+</html>
